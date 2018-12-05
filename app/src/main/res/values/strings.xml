@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Troca Plantao</string>
+    <string name="btn_entrar" />
+    <array name="pacientes">
+        <item>paciente1</item>
+    </array>
+
+    <array name="transferencia">
+        <item>Permanencia no hospital</item>
+        <item>Troca de leito/Setor</item>
+        <item>Transferência de hospital</item>
+    </array>
+
+    <array name="alta">
+        <item>Permanece no hospital</item>
+        <item>Alta curada</item>
+        <item>Óbito</item>
+        <item>Encerramento administrativo</item>
+    </array>
+</resources>
+

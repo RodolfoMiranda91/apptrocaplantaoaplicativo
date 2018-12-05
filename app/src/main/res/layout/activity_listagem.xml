@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Listagem">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="267dp"
+                    android:layout_height="174dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/logo"
+                    android:layout_marginBottom="150px"/>
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Selecionar paciente"
+                    android:textAlignment="center"
+                    android:textSize="40dp"
+                    android:layout_marginBottom="130px"/>
+
+                <Spinner
+                    android:id="@+id/listadepacientes"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="80px"
+                    android:entries="@array/pacientes"/>
+
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/paciente_lista"
+                    android:layout_width="match_parent"
+                    android:layout_height="99dp"
+                    app:layoutManager="android.support.v7.widget.LinearLayoutManager" />
+
+
+                <Button
+                    android:id="@+id/btn_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Verificar status"
+                    android:layout_gravity="center_horizontal"/>
+
+
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

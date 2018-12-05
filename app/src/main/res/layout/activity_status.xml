@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".Status">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="Status do paciente"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView_nome_paciente"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="Nome do paciente:"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <EditText
+                    android:id="@+id/nome_paciente"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:ems="@android:integer/config_longAnimTime"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/textView_numero_leito"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="Número do leito:"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+
+                <EditText
+                    android:id="@+id/leito_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:ems="@android:integer/config_longAnimTime"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/textView_data_internacao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="Data da internação:"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <EditText
+                    android:id="@+id/editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="date"
+                    android:hint="__/__/__"/>
+
+                <TextView
+                    android:id="@+id/textView_status_paciente"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="Status do paciente:"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/radioButton5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Melhora"
+                            android:ems="7"/>
+
+                        <RadioButton
+                            android:id="@+id/radioButton6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Estável"
+                            android:ems="7"/>
+
+                        <RadioButton
+                            android:id="@+id/radioButton7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Piora" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <TextView
+                    android:paddingTop="10dp"
+                    android:id="@+id/textView_medicacao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="Medicação:"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1º Horário"
+                        android:ems="9"/>
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2º Horário"
+                        android:ems="9"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3º Horário"
+                        android:ems="9"/>
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4º Horário"
+                        android:ems="9"/>
+                </LinearLayout>
+
+                <TextView
+                    android:paddingTop="10dp"
+                    android:id="@+id/textView_banho"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="Banho:"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/radioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sim"
+                            android:ems="10"/>
+
+                        <RadioButton
+                            android:id="@+id/radioButton2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Não"
+                            android:ems="10"/>
+                    </RadioGroup>
+                </LinearLayout>
+
+                <TextView
+                    android:paddingTop="10dp"
+                    android:id="@+id/textView_transferencia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="Transferência:"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <Spinner
+                    android:id="@+id/transferencia"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/transferencia"/>
+
+                <TextView
+                    android:paddingTop="10dp"
+                    android:id="@+id/textView_alta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="Alta:"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <Spinner
+                    android:id="@+id/planets_spinner2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/alta" />
+
+                <TextView
+                    android:paddingTop="10dp"
+                    android:id="@+id/textView_alta_data"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="Data da alta:"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <CalendarView
+                    android:id="@+id/calendarView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_horizontal" />
+
+                <TextView
+                    android:paddingTop="10dp"
+                    android:id="@+id/textView_plantao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="Plantão:"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/radioButton3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Diurno"
+                            android:ems="10"/>
+
+                        <RadioButton
+                            android:id="@+id/radioButton4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Noturno"
+                            android:ems="10"/>
+                    </RadioGroup>
+                </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/btn_salvar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Salvar"
+                    android:ems="9"/>
+
+                <Button
+                    android:id="@+id/btn_voltar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="9"
+                    android:text="Voltar" />
+            </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
